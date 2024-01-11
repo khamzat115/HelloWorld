@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable comp
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id appname_tv
+id comp_img
+id hello_button
+id textView3
+id toolbar
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string intro
+style Base.Theme.HelloWorld2
+style Theme.HelloWorld2
+xml backup_rules
+xml data_extraction_rules

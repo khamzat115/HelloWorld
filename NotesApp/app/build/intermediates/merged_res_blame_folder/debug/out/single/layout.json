@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\kahmi\\.gradle\\daemon\\8.2\\com.example.notesapp-mergeDebugResources-36:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\kahmi\\.gradle\\daemon\\8.2\\com.example.notesapp-main-39:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.notesapp-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "com.example.notesapp-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kahmi\\.gradle\\daemon\\8.2\\com.example.notesapp-mergeDebugResources-36:\\layout\\activity_add_note.xml",
+        "source": "C:\\Users\\kahmi\\.gradle\\daemon\\8.2\\com.example.notesapp-main-39:\\layout\\activity_add_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\kahmi\\.gradle\\daemon\\8.2\\com.example.notesapp-mergeDebugResources-36:\\layout\\list_item.xml",
+        "source": "C:\\Users\\kahmi\\.gradle\\daemon\\8.2\\com.example.notesapp-main-39:\\layout\\list_item.xml"
+    }
+]

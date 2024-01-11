@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/BaseLabeltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Base"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TipPercenttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/BaseLabeltv"
+        app:layout_constraintTop_toBottomOf="@+id/BaseLabeltv"
+        tools:text="24%" />  <!-- top of percent label should be aligned with bottom of base label-->
+
+
+    <TextView
+        android:id="@+id/tipLabeltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/numPeopleLabeltv"
+        app:layout_constraintTop_toBottomOf="@+id/numPeopleLabeltv" />
+
+    <TextView
+        android:id="@+id/TotalLabeltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/tipLabeltv"
+        app:layout_constraintTop_toBottomOf="@+id/tipLabeltv" />
+
+    <!-- views on the right side-->
+    <EditText
+        android:id="@+id/BaseAmountet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="8"
+        android:hint="Base amount"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/BaseLabeltv"
+        app:layout_constraintStart_toEndOf="@+id/BaseLabeltv"
+        app:layout_constraintTop_toTopOf="@id/BaseLabeltv" />
+
+    <SeekBar
+        android:id="@+id/TipseekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="30"
+        app:layout_constraintBottom_toBottomOf="@+id/TipPercenttv"
+        app:layout_constraintStart_toStartOf="@+id/BaseAmountet"
+        app:layout_constraintTop_toTopOf="@+id/TipPercenttv" />
+
+    <TextView
+        android:id="@+id/TipAmounttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tipLabeltv"
+        app:layout_constraintStart_toStartOf="@+id/etnumPeople"
+        app:layout_constraintTop_toTopOf="@+id/tipLabeltv"
+        tools:text="19.96" />
+
+    <TextView
+        android:id="@+id/TotalAmounttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/TotalLabeltv"
+        app:layout_constraintStart_toStartOf="@+id/TipAmounttv"
+        app:layout_constraintTop_toTopOf="@+id/TotalLabeltv"
+        tools:text="103.11" />
+
+    <TextView
+        android:id="@+id/Footertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="cursive"
+        android:text="Made by K❤️nApps"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TipDescriptiontv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TipseekBar"
+        app:layout_constraintStart_toStartOf="@+id/TipseekBar"
+        app:layout_constraintTop_toBottomOf="@+id/TipseekBar"
+        tools:text="Acceptable" />
+
+    <TextView
+        android:id="@+id/numPeopleLabeltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="50dp"
+        android:text="#Pple"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/tipLabeltv"
+        app:layout_constraintEnd_toEndOf="@+id/TipPercenttv"
+        app:layout_constraintTop_toBottomOf="@+id/TipPercenttv" />
+
+    <EditText
+        android:id="@+id/etnumPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="48dp"
+        android:hint="numPeople"
+        android:inputType="number|numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/numPeopleLabeltv"
+        app:layout_constraintStart_toStartOf="@+id/TipseekBar"
+        app:layout_constraintTop_toTopOf="@+id/numPeopleLabeltv" />
+
+    <TextView
+        android:id="@+id/perpersontv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/TotalAmounttv"
+        app:layout_constraintStart_toEndOf="@+id/TotalAmounttv"
+        app:layout_constraintTop_toTopOf="@+id/TotalAmounttv"
+        tools:text="0" />
+
+    <CheckBox
+        android:id="@+id/roundupcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:text="Round Up"
+        app:layout_constraintStart_toEndOf="@+id/etnumPeople"
+        app:layout_constraintTop_toBottomOf="@+id/TipDescriptiontv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
